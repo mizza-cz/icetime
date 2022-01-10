@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>S ICETIME</title>
+   <link rel="stylesheet" href="https://use.typekit.net/otb2ukp.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/libs.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__inner">
+         <div class="header__links">
+            <a href="#" target="_blank" style="width: 162px;height: 38px;">
+               <img src="images/link-1.png" alt="">
+            </a>
+            <a href="#" target="_blank" style="width: 74px; height: 40px;margin-left: 38px;">
+               <img src="images/svg/prim-logo.svg" alt="">
+            </a>
+         </div>
+         <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="">
+         </a>
+
+         <div class="user">
+            <a class="user__status" href="#">
+               <img src="images/svg//user.svg" alt="">
+            </a>
+            <div class="user__box">
+               <p>Nemáte účet?</p>
+               <a href="registrace.html">Vytvořte si ho</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="registrace">
+      <div class="hp-content">
+         <div class="form-wrapper">
+            <form action="" class="form login" id="regForm" method="post">
+               <label class="form__label"  for="">přezdívka</label>
+               <div class="form__input input-name">
+                  <input class="_req"  type="text" value="martin tellinger" >
+               </div>
+               <label class="form__label"  for="">Váš e - mail</label>
+               <div class="form__input input-mail">
+                  <input class="_req _email" type="email" value="martin@tellinger.cz" >
+               </div>
+               <label class="form__label" for="">Heslo</label>
+               <div class="form__input input-password">
+                  <input class="_req"  type="password"  value="FakePSW" id="myInput">
+                  <img src="images/svg/view-show.svg" alt="" onclick="myFunction()">
+               </div>
+               <label class="remember" for="">
+                  <input type="checkbox" class="socialInput" >
+                  <div class="checkmark">
+                  </div>
+                  Zúčastnili jste se na Facebooku nebo Instagramu?
+                  <div class="radio__box">
+                        <div class="radio__input" data-id="1">
+                           <h3>Facebook</h3>
+                           <input class="radio" type="radio" name="social" value="facebokk">
+                        </div>
+                  
+                     /
+                        <div class="radio__input" data-id="2">
+                           <h3>Instagram</h3>
+                           <input class="radio" type="radio" name="social" value="instagram">
+                        </div>
+                  </div>
+                  <div class="social__info" id="1">
+                     <label class="form__label"  for="">Jméno</label>
+                     <div class="form__input input-name">
+                        <input type="text" value="martin" required>
+                     </div>
+                     <label class="form__label"  for="">příjmení</label>
+                     <div class="form__input input-name">
+                        <input type="text" value="tellinger" required>
+                     </div>
+                  </div>
+                  <div class="social__info" id="2">
+                     <label class="form__label"  for="">nickname</label>
+                     <div class="form__input input-name">
+                        <input type="text" value="User" required>
+                     </div>
+                  </div>
+               </label>
+                 
+                  
+               <button class="link form__btn" type="submit">Zaregistrovat se</button>
+            </form>
+           
+         </div>
+   </div>   
+   </div>
+  
+   <a class="hp-ban" href="#">
+      <img src="" alt="">
+   </a>
+
+
+
+
+
+   
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
