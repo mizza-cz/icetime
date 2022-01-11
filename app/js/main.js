@@ -1,6 +1,17 @@
 
+let max_chars = 2;
 
+$('.tipovani-item__input-text').keydown( function(e){
+    if ($(this).val().length >= max_chars) { 
+        $(this).val($(this).val().substr(0, max_chars));
+    }
+});
 
+$('.tipovani-item__input-text').keyup( function(e){
+    if ($(this).val().length >= max_chars) { 
+        $(this).val($(this).val().substr(0, max_chars));
+    }
+});
  
 
 function myFunction() {
@@ -11,7 +22,20 @@ function myFunction() {
      x.type = "password";
    }
  }
-
+ $(document).ready(function(){
+  function updateText(event){
+    var input=$(this);
+    setTimeout(function(){
+      var val=input.val();
+      if(val!="")
+        input.parent().addClass("label-active");
+      else
+        input.parent().removeClass("label-active");
+    },1)
+  }
+  $(".tipovani-item__input input").keydown(updateText);
+  $(".tipovani-item__input input").change(updateText);
+});
 
  
 
@@ -81,6 +105,8 @@ jQuery(document).ready(function($) {
 
  
  });    
+
+
 
 
 

@@ -546,9 +546,24 @@ select:focus + .focus {
     display: none;
   }
 }
-.tipovani__results {
+.tipovani__vysledky {
+  h3 {
+    font-size: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: normal;
+    color: #fff;
+    font-family: apotek, sans-serif;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+}
+.tipovani__statistiky {
   display: flex;
   justify-content: center;
+
   li {
     font-size: 18px;
     font-weight: bold;
@@ -600,7 +615,8 @@ select:focus + .focus {
   padding: 15px 21px 13px 14px;
   position: relative;
   transition: all 0.3s;
-  &.focus {
+  &.focus,
+  &.label-active {
     width: 114px;
     &::before {
       content: '';
@@ -866,5 +882,8 @@ select:focus + .focus {
 
 .smoke-base {
   position: fixed;
+}
+input[data-point='length'] {
+  width: 0;
 }
 @import 'media';
