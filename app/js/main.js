@@ -1,17 +1,10 @@
 
-let max_chars = 2;
-
-$('.tipovani-item__input-text').keydown( function(e){
-    if ($(this).val().length >= max_chars) { 
-        $(this).val($(this).val().substr(0, max_chars));
-    }
-});
-
-$('.tipovani-item__input-text').keyup( function(e){
-    if ($(this).val().length >= max_chars) { 
-        $(this).val($(this).val().substr(0, max_chars));
-    }
-});
+function limitKeypress(event, value, maxLength) {
+  if (value != undefined && value.toString().length >= maxLength) {
+      event.preventDefault();
+  }
+  return
+}
  
 
 function myFunction() {
