@@ -39,6 +39,7 @@
 }
 .user {
   display: flex;
+  align-items: center;
   &__box {
     p {
       font-weight: 600;
@@ -364,6 +365,10 @@ input:checked ~ .checkmark::before {
 .tipovani {
   margin-top: 45px;
   padding-bottom: 78px;
+  .error.message,
+  .success.message {
+    margin: 0 auto 32px;
+  }
   h2 {
     padding-left: 118px;
   }
@@ -889,5 +894,34 @@ input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+// hlasky register
+.error.message,
+.success.message {
+  width: 290px;
+  padding: 16px;
+  border-radius: 6px;
+
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-bottom: 12px;
+  text-align: center;
+  display: block;
+}
+.bad,
+.error.message {
+  border: 1px solid $red;
+  display: block;
+  &.hidden {
+    display: none;
+  }
+}
+.good,
+.success.message {
+  border: solid 1px #1db954;
+  &.hidden {
+    display: none;
+  }
 }
 @import 'media';

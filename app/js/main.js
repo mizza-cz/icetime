@@ -1,34 +1,9 @@
 
-function limitKeypress(event, value, maxLength) {
-  if (value != undefined && value.toString().length >= maxLength) {
-      event.preventDefault();
-  }
-  return
-}
- 
 
-function myFunction() {
-   var x = document.getElementById("myInput");
-   if (x.type === "password") {
-     x.type = "text";
-   } else {
-     x.type = "password";
-   }
- }
- $(document).ready(function(){
-  function updateText(event){
-    var input=$(this);
-    setTimeout(function(){
-      var val=input.val();
-      if(val!="")
-        input.parent().addClass("label-active");
-      else
-        input.parent().removeClass("label-active");
-    },1)
-  }
-  $(".tipovani-item__input input").keydown(updateText);
-  $(".tipovani-item__input input").change(updateText);
-});
+
+
+
+
 
  
 

@@ -43,20 +43,30 @@
    <div class="registrace">
       <div class="hp-content">
          <div class="form-wrapper">
-            <form action="" class="form login"  method="post">
-               <label class="form__label"  for="">přezdívka</label>
-               <div class="form__input input-name">
-                  <input data-rule="name"  type="text" value="martin tellinger" >
+            <div class="ui error message hidden"></div>
+      <div class="ui success message hidden">
+            uspesna registrace
+      </div>
+            <form id="form" action="" class="form login"  method="post" novalidate>
+               <div class="field">
+                  <label class="form__label"  for="">přezdívka</label>
+                  <div class="form__input input-name">
+                     <input name="name" data-validation="required"  type="text" value="martin tellinger" >
+                  </div>
                </div>
-               <label class="form__label"  for="">Váš e - mail</label>
+               <div class="field">
+                  <label class="form__label"  for="">Váš e - mail</label>
                <div class="form__input input-mail">
-                  <input data-rule="mail" type="email" value="martin@tellinger.cz" >
+                  <input name="email" data-validation="required email" type="email" value="martin@tellinger.cz" >
                </div>
+               </div>
+              <div class="field">
                <label class="form__label" for="">Heslo</label>
                <div class="form__input input-password">
-                  <input data-rule="text"  type="password"  value="FakePSW" id="myInput">
+                  <input name="name" data-validation="required"   type="password"  value="FakePSW" id="myInput">
                   <img src="images/svg/view-show.svg" alt="" onclick="myFunction()">
                </div>
+              </div>
                <label class="remember" for="">
                   <input type="checkbox" class="socialInput" >
                   <div class="checkmark">
@@ -116,6 +126,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
+   <script src="js/register.js"></script>
    <script src="js/main.js"></script>
 </body>
 

@@ -42,6 +42,10 @@
    </header>
    <section class="tipovani">
       <h2>tipuj <span>icetime</span></h2>
+      <div class="ui error message hidden">musí být vyplněno!</div>
+      <div class="ui success message hidden">
+            uspesna registrace
+      </div>
       <div class="tipovani__inner">
          <div class="tipovani-item">
             <div class="tipovani-item__box">
@@ -132,12 +136,12 @@
                </select>
             </div>
             <div class="tipovani-item__tipy ">
-               <h4>tipni icetime</h4>
+               <h4>3 3 tipni icetime</h4>
                <div class="tipovani-item__input round">
-                  <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
+                  <input    class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
                   onkeypress="limitKeypress(event,this.value,2)">
                   <input style="width: 9px;" type="text" value=":" disabled> 
-                  <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
+                  <input   class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
                   onkeypress="limitKeypress(event,this.value,2)">
                </div>
             </div>
@@ -298,10 +302,10 @@
             <div class="tipovani-item__tipy ">
                <h4>tipni icetime</h4>
                <div class="tipovani-item__input round">
-                  <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
+                  <input   class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
                   onkeypress="limitKeypress(event,this.value,2)">
                   <input style="width: 9px;" type="text" value=":" disabled> 
-                  <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
+                  <input class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
                   onkeypress="limitKeypress(event,this.value,2)">
                </div>
             </div>
@@ -397,7 +401,7 @@
             <div class="tipovani-item__tipy">
                <h4>tipni icetime</h4>
                <div class="tipovani-item__input round">
-                  <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
+                  <input   class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
                   onkeypress="limitKeypress(event,this.value,2)">
                   <input style="width: 9px;" type="text" value=":" disabled> 
                   <input  class="tipovani-item__input-text" type="number" maxlength="2" min="0" max="99"
@@ -407,8 +411,9 @@
          </div>
          
       </div>
-      <button class="link">odeslat moje tipy</button>
+      <button  id="tipy-btn" class="link">odeslat moje tipy</button>
    </section>
+   
   <footer class="footer">
      <div class="footer__inner">
         <div class="footer__col">
@@ -490,6 +495,7 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
+   <script src="js/tipovani.js"></script>
    <script src="js/main.js"></script>
 </body>
 
