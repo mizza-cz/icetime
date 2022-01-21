@@ -111,6 +111,9 @@
   }
 }
 @media (max-width: 640px) {
+  .user {
+    padding-left: 16px;
+  }
   .tipovani-item__box {
     justify-content: center;
   }
@@ -142,10 +145,18 @@
     font-size: 2.2rem;
   }
 }
-@media (max-width: 400px) {
-  .user__status {
-    display: none;
+@media (max-width: 440px) {
+  .user {
+    margin-bottom: 32px;
   }
+  .logo {
+    margin: 0 auto;
+  }
+  .header__inner {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 400px) {
   .table-full,
   .tipovani,
   .footer {
