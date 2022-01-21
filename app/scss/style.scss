@@ -83,7 +83,9 @@
 .hp-content {
   max-width: 974px;
   padding-right: 4px;
-  margin: 161px auto 146px auto;
+  padding-top: 161px;
+  padding-bottom: 146px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   &__box {
