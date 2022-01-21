@@ -6,7 +6,7 @@ if(el){
   successTipy = document.querySelector(".ui.success.message");
 
   let inputTipy = document.querySelectorAll('tipovani-item__input-text')
-  if(inputTipy <= 0){
+  if(inputTipy == 0){
         errorTipy.className = "ui error message ";
      
      } else{

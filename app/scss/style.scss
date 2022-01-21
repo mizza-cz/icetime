@@ -26,7 +26,7 @@
 }
 .logo {
   width: 242px;
-  height: 73.2px;
+  height: auto;
   display: block;
   position: absolute;
   left: 0;
@@ -810,6 +810,7 @@ select:focus + .focus {
       border-bottom: 1px solid rgba(255, 255, 255, 0.15);
       padding: 15px 0px;
       text-align: right;
+      font-family: apotek, sans-serif;
       &:first-child {
         width: 40px;
       }
@@ -915,12 +916,13 @@ input::-webkit-inner-spin-button {
   width: 290px;
   padding: 16px;
   border-radius: 6px;
-
+  font-family: apotek, sans-serif;
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   margin-bottom: 12px;
   text-align: center;
   display: block;
+  font-size: 1.4rem;
 }
 .bad,
 .error.message {
