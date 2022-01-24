@@ -1,26 +1,87 @@
 
+// let el = document.getElementById('tipy-btn');
+// if(el){
+//   el.addEventListener('click', function(){
+//     errorTipy = document.querySelector(".ui.error.message"),
+//   successTipy = document.querySelector(".ui.success.message");
+
+//   let inputTipy = document.querySelectorAll('tipovani-item__input-text')
+//   if(inputTipy == 0){
+//         errorTipy.className = "ui error message ";
+     
+//      } else{
+//         successTipy.className = "ui success message";
+        
+//      }
+//   });
+// }
+
+
+// let el = document.getElementById('tipy-btn');
+// if(el){
+//   el.addEventListener('click', function(){
+//     errorTipy = document.querySelector(".ui.error.message"),
+//   successTipy = document.querySelector(".ui.success.message");
+
+//   let numbers = [];
+//   const inputs = document.getElementsByName('test');
+//   for (const input of inputs) {
+//     numbers.push(Number(input.value));
+//     if(input.value >= 1 ){
+      
+//       successTipy.className = "ui success message";
+   
+//    } else{
+//     errorTipy.className = "ui error message ";
+      
+//    }
+
+//   }
+
+
+
+//   });
+// }
 let el = document.getElementById('tipy-btn');
 if(el){
   el.addEventListener('click', function(){
     errorTipy = document.querySelector(".ui.error.message"),
   successTipy = document.querySelector(".ui.success.message");
 
-  let inputTipy = document.querySelectorAll('tipovani-item__input-text')
-  if(inputTipy == 0){
-        errorTipy.className = "ui error message ";
-     
-     } else{
-        successTipy.className = "ui success message";
-        
-     }
+  let numbers = [];
+  const inputs = document.getElementsByName('test');
+  for (let input of inputs) { 
+    numbers.push(Number(input.value));
+
+  }
+  const total = numbers.reduce((prevValue, currentElem) =>{
+    const table = {prevValue, currentElem,'sum': prevValue + currentElem};
+   
+    return prevValue + currentElem;
+  },0);
+  if(total > 0){
+    successTipy.className = "ui success message";
+  }
+  else{
+    errorTipy.className = "ui error message ";
+    
+  }
+  console.log(total);
+  
+
   });
 }
+
+
+
+
+
 
 jQuery(document).ready(function($) {
   $('.tipovani__inner').slick({
     prevArrow: '<button class="tipovani__btn tipovani__btnprev"><img src="images/svg/angle-down.svg" alt="" ></button> ',
     nextArrow: ' <button class="tipovani__btn tipovani__btnnext"><img src="images/svg/angle-down.svg" alt = "" ></button > ',
-    // centerMode: true,
+    // centerMode: true, 
     variableWidth: true,
     slidesToShow: 1,
     slidesToScroll: 1,
